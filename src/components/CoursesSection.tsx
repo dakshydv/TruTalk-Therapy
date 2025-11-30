@@ -77,7 +77,7 @@ export function CoursesSection() {
                   {course.description}
                 </p>
                 
-                <button className="w-full py-3 border border-sage-200 text-sage-600 rounded-lg font-bold hover:bg-sage-50 hover:border-sage-300 transition-all duration-300 flex items-center justify-center gap-2">
+                <button className="w-full py-3 hover:cursor-pointer border border-sage-200 text-sage-600 rounded-lg font-bold hover:bg-sage-50 hover:border-sage-300 transition-all duration-300 flex items-center justify-center gap-2">
                   <Video size={18} />
                   Start Learning
                 </button>

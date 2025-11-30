@@ -30,16 +30,21 @@ export default function Home() {
       {/* Hero Section */}
       <main className="flex-grow flex flex-col relative">
         
-        <section className="min-h-screen flex flex-col items-center justify-center px-4 md:px-8 relative pt-20 overflow-hidden bg-gradient-to-br from-sage-100 via-sage-50 to-stone-100">
+        <section className="min-h-screen flex flex-col items-center justify-center px-4 md:px-8 relative pt-20 overflow-hidden bg-linear-to-br from-sage-100 via-sage-50 to-stone-100">
             {/* Background Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-0 pointer-events-none">
               {/* Subtle Grid Pattern */}
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]"></div>
-              
-              <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-sage-100/50 rounded-full blur-[100px] opacity-60 animate-pulse" style={{ animationDuration: '8s' }}></div>
-              <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-stone-200/40 rounded-full blur-[120px] opacity-50 animate-pulse" style={{ animationDuration: '10s' }}></div>
+              {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]"></div> */}
+              {/* Organic Blobs */}
+              <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-linear-to-br from-sage-100/80 to-sage-200/50 rounded-full blur-[100px] opacity-70 animate-pulse" style={{ animationDuration: '8s' }}></div>
+              <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-linear-to-tl from-stone-200/80 to-sage-100/50 rounded-full blur-[120px] opacity-60 animate-pulse" style={{ animationDuration: '10s' }}></div>
               <div className="absolute top-[40%] left-[-5%] w-[30%] h-[30%] bg-sage-50/60 rounded-full blur-[80px] opacity-40 animate-pulse" style={{ animationDuration: '12s' }}></div>
               
+              {/* Hero Illustration */}
+              <div className="absolute inset-0 opacity-15 pointer-events-none mix-blend-multiply">
+                 <img src="/hero-illustration.png" alt="Calming therapy illustration" className="w-full h-full object-cover" />
+              </div>
+
               {/* Floating Icons */}
               <div className="absolute top-[20%] left-[10%] text-sage-300 opacity-60 animate-bounce hidden md:block" style={{ animationDuration: '6s' }}>
                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.69l5.74 5.88a.996.996 0 0 1 .29.71c0 .55-.45.99-1 .99H15v3.18c0 .89.74 1.63 1.63 1.63h2.55c.55 0 .99.45.99 1 0 .27-.11.52-.29.71l-5.88 5.74a.996.996 0 0 1-.71.29c-.55 0-.99-.45-1-.99v-3.18c0-.89-.74-1.63-1.63-1.63h-2.55a.996.996 0 0 1-.71-.29l-5.74-5.88a.996.996 0 0 1-.29-.71c0-.55.45-.99 1-.99h2.04v-3.18c0-.89.74-1.63 1.63-1.63h2.55c.55 0 .99-.45.99-1 0-.27-.11-.52-.29-.71L12.71 2.98c-.19-.18-.44-.29-.71-.29zm0 0"/></svg>

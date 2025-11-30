@@ -46,31 +46,36 @@ export function BookingSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-1">
                     <label htmlFor="name" className="text-xs font-bold text-stone-500 uppercase tracking-wider">Name</label>
-                    <input type="text" id="name" className="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 focus:border-transparent transition-all" placeholder="Your Name" />
+                    <input type="text" id="name" className="w-full px-4 py-3 bg-stone-50 outline-[0.2px] outline-stone-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-sage-400 focus:border-transparent transition-all" placeholder="Your Name" />
                   </div>
                   <div className="space-y-1">
                     <label htmlFor="email" className="text-xs font-bold text-stone-500 uppercase tracking-wider">Email</label>
-                    <input type="email" id="email" className="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 focus:border-transparent transition-all" placeholder="your@email.com" />
+                    <input type="email" id="email" className="w-full px-4 py-3 bg-stone-50 outline-[0.5px] outline-stone-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-sage-400 focus:border-transparent transition-all" placeholder="your@email.com" />
                   </div>
                 </div>
                 
                 <div className="space-y-1">
                   <label htmlFor="service" className="text-xs font-bold text-stone-500 uppercase tracking-wider">Service of Interest</label>
-                  <select id="service" className="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 focus:border-transparent transition-all text-stone-600">
-                    <option value="">Select a service...</option>
-                    <option value="counseling">Child Counseling</option>
-                    <option value="coaching">Parent Coaching</option>
-                    <option value="assessment">Autism Assessment</option>
-                    <option value="other">Other</option>
-                  </select>
+                  <div className="relative">
+                    <select id="service" className="w-full px-4 py-3 bg-stone-50 outline-[0.5px] outline-stone-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-sage-400 focus:border-transparent transition-all text-stone-600 appearance-none cursor-pointer hover:outline-sage-300">
+                      <option value="">Select a service...</option>
+                      <option value="counseling">Child Counseling</option>
+                      <option value="coaching">Parent Coaching</option>
+                      <option value="assessment">Autism Assessment</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-stone-500">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="space-y-1">
                   <label htmlFor="message" className="text-xs font-bold text-stone-500 uppercase tracking-wider">Message</label>
-                  <textarea id="message" rows={4} className="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 focus:border-transparent transition-all resize-none" placeholder="How can we help you?"></textarea>
+                  <textarea id="message" rows={4} className="w-full px-4 py-3 bg-stone-50 outline-[0.5px] outline-stone-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-sage-400 focus:border-transparent transition-all resize-none" placeholder="How can we help you?"></textarea>
                 </div>
                 
-                <button type="button" className="w-full py-4 bg-sage-600 text-white rounded-lg font-bold text-lg hover:bg-sage-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-sage-200 flex items-center justify-center gap-2">
+                <button type="button" className="w-full py-4 bg-sage-600 text-white rounded-lg font-bold text-lg hover:bg-sage-700 transform hover:cursor-pointer transition-all duration-300 shadow-lg shadow-sage-200 flex items-center justify-center gap-2">
                   Send Request
                   <Send size={20} />
                 </button>
