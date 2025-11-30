@@ -9,7 +9,8 @@ export function AboutSection() {
           <div className="aspect-3/4 bg-stone-200 rounded-2xl overflow-hidden shadow-xl relative">
              {/* Placeholder for Therapist Image */}
              <div className="absolute inset-0 flex items-center justify-center bg-stone-100 text-stone-400">
-                <User size={64} />
+                {/* <User size={64} /> */}
+                <img src="/intro3.png" alt="intro" className="w-full h-full object-cover" />
              </div>
              {/* Decorative element */}
              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-sage-200 rounded-full -z-10"></div>
@@ -29,7 +30,7 @@ export function AboutSection() {
           </h2>
           
           <p className="text-lg text-stone-600 leading-relaxed font-light">
-            Dr. Sarah Bennett is a dedicated child psychologist specializing in autism spectrum disorders. With over 15 years of experience, she believes in a holistic approach that empowers both children and their parents.
+            Dr. Prerna Dudy is a dedicated child psychologist specializing in autism spectrum disorders. With over 15 years of experience, she believes in a holistic approach that empowers both children and their parents.
           </p>
           
           <p className="text-lg text-stone-600 leading-relaxed font-light">

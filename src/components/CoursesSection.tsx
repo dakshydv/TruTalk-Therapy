@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { BookOpen, Video, Clock, ArrowRight } from 'lucide-react';
 
 const courses = [
@@ -7,21 +8,21 @@ const courses = [
     description: "A comprehensive introduction to autism spectrum disorder, focusing on understanding your child's perspective and needs.",
     modules: 8,
     duration: "4 weeks",
-    image: "bg-sage-100", // Placeholder class
+    image: "/course-autism.png",
   },
   {
     title: "Effective Communication Strategies",
     description: "Learn practical techniques to enhance communication and connection with your child, reducing frustration and building trust.",
     modules: 6,
     duration: "3 weeks",
-    image: "bg-stone-200", // Placeholder class
+    image: "/course-communication.png",
   },
   {
     title: "Managing Sensory Sensitivities",
     description: "Strategies for identifying and managing sensory triggers to create a more comfortable environment for your child.",
     modules: 5,
     duration: "2.5 weeks",
-    image: "bg-sage-200", // Placeholder class
+    image: "/course-sensory.png",
   },
 ];
 
@@ -44,16 +45,17 @@ export function CoursesSection() {
             </p>
           </div>
           
-          <button className="hidden md:flex items-center gap-2 text-sage-600 font-bold hover:text-sage-800 transition-colors group">
+          <Link href="/courses" className="hidden md:flex items-center gap-2 text-sage-600 font-bold hover:text-sage-800 transition-colors group">
             View All Courses
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {courses.map((course, index) => (
             <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-stone-100">
-              <div className={`h-48 ${course.image} relative overflow-hidden`}>
+              <div className="h-48 relative overflow-hidden">
+                 <img src={course.image} alt={course.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-300"></div>
               </div>
               
@@ -87,10 +89,10 @@ export function CoursesSection() {
         </div>
         
         <div className="mt-12 text-center md:hidden">
-           <button className="inline-flex items-center gap-2 text-sage-600 font-bold hover:text-sage-800 transition-colors group">
+           <Link href="/courses" className="inline-flex items-center gap-2 text-sage-600 font-bold hover:text-sage-800 transition-colors group">
             View All Courses
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

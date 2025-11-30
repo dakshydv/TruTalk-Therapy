@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { CoursesSection } from "@/components/CoursesSection";
 import { BookingSection } from "@/components/BookingSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -104,13 +105,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                <a href="#contact" className="px-8 py-4 bg-sage-600 text-white rounded-full font-bold hover:bg-sage-700 transition-all shadow-lg shadow-sage-200 hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2 group">
+                <Link href="#contact" className="px-8 py-4 bg-sage-600 text-white rounded-full font-bold hover:bg-sage-700 transition-all shadow-lg shadow-sage-200 hover:shadow-xl transform  flex items-center gap-2 group">
                 Book a Consultation
-                <ArrowDown size={18} className="group-hover:translate-y-1 transition-transform" />
-                </a>
-                <a href="#courses" className="px-8 py-4 bg-white text-sage-600 border border-sage-200 rounded-full font-bold hover:bg-sage-50 transition-all hover:border-sage-300 hover:shadow-md">
+                <ArrowDown size={18} className=" transition-transform" />
+                </Link>
+                <Link href="/courses" className="px-8 py-4 bg-white text-sage-600 border border-sage-200 rounded-full font-bold hover:bg-sage-50 transition-all hover:border-sage-300 hover:shadow-md">
                 View Parent Courses
-                </a>
+                </Link>
             </div>
             </div>
 
