@@ -30,9 +30,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TruTalk Therapy",
   description: "A calming and trusted space for parents to connect with a lead child psychologist, book personalized autism consultations, and learn through guided modules designed to support their child'tps growth and well-being.",
-  icons: {
-    icon: "/profile-circular.png"
-  }
+  // icons: {
+  //   icon: "/profile-circular.png"
+  // }
 };
 
 export default function RootLayout({
