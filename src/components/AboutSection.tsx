@@ -62,68 +62,48 @@ export function AboutSection() {
                   <span className="text-sage-500 italic">compassion</span> and
                   expertise.
                 </h2>
-                <div className="text-stone-600 leading-relaxed font-light space-y-4">
+                <div className="text-stone-600 leading-relaxed font-light space-y-4 text-justify">
                   <p>
-                    Hi, I&#39;m{" "}
+                    Prerna is a{" "}
                     <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      Prerna
-                    </span>
-                    —a{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      psychology graduate, ABA therapist, and art-therapy
-                      trained practitioner
+                      supervised Lead ABA Therapist
                     </span>{" "}
-                    with more than five years of experience working across
-                    diverse mental health and behavioural settings.
-                  </p>
-                  <p>
-                    My professional journey began in New Delhi, where I worked
-                    in a drug de-addiction and rehabilitation centre supporting
-                    children, adolescents, and young adults facing substance use
-                    and mental health challenges. During this time, I
-                    facilitated group and individual counselling sessions,
-                    conducted psychological assessments, and participated in
-                    therapeutic interventions. I gained deep exposure to
-                    different disorders, their symptoms, behavioural patterns,
-                    and evidence-based treatment approaches.
-                  </p>
-                  <p>
-                    Alongside my formal education—a{" "}
+                    and{" "}
                     <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      Bachelor&#39;s in Applied Psychology (Honours)
-                    </span>
-                    , a{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      diploma in Autism and Behavioural Science
-                    </span>
-                    , and an{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      Art Therapy diploma
-                    </span>
-                    —I also completed professional training in{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      Cognitive Behavioural Therapy (CBT), Psychotherapy, and
-                      Hypnotherapy
-                    </span>
-                    . These additional skills strengthened my therapeutic
-                    foundation and helped me understand the complexities of
-                    human behaviour from multiple perspectives.
-                  </p>
-                  <p>
-                    Today, I am a{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      supervised Lead ABA Therapist in Canada
+                      Art-Therapy trained practitioner
                     </span>{" "}
-                    with extensive experience supporting autistic children and
-                    their families through structured skill-building, behaviour
-                    strategies, emotional regulation support, and parent
-                    training. My approach remains{" "}
+                    with a rich background in psychology. Holding a{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      Bachelor’s in Applied Psychology
+                    </span>{" "}
+                    and{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      diplomas in Autism and Behavioural Science
+                    </span>
+                    , she has further specialized in{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      CBT, Psychotherapy, and Hypnotherapy
+                    </span>
+                    . Her varied qualifications allow her to approach mental
+                    health from multiple angles, ensuring comprehensive support
+                    for her clients.
+                  </p>
+                  <p>
+                    Her professional journey began in New Delhi, working in
+                    rehabilitation centers with youth facing complex addiction
+                    and mental health challenges. Today, based in Canada, she
+                    focuses on{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      supporting autistic children and their families
+                    </span>
+                    . Prerna’s approach is{" "}
                     <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
                       warm, holistic, and practical
                     </span>
-                    —combining behavioural principles, psychological insight,
-                    and creative therapeutic tools to help families feel
-                    confident and supported.
+                    —blending evidence-based behavioral strategies with creative
+                    therapeutic tools to help parents build skills, manage
+                    behaviors, and find confidence in their daily parenting
+                    journey.
                   </p>
                 </div>
               </div>
@@ -139,59 +119,45 @@ export function AboutSection() {
                   Honest, accessible conversations around{" "}
                   <span className="text-sage-500 italic">mental health.</span>
                 </h2>
-                <div className="text-stone-600 leading-relaxed font-light space-y-4">
+                <div className="text-stone-600 leading-relaxed font-light space-y-4 text-justify">
                   <p>
+                    TruTalk Therapy was founded in 2021 with a simple but
+                    powerful mission: to{" "}
                     <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      TruTalk Therapy began in 2021
-                    </span>{" "}
-                    with a simple intention: to create{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      honest, accessible conversations around mental health
+                      foster honest, accessible conversations about mental
+                      health
                     </span>
-                    . At that time, my focus was on raising awareness, providing
-                    emotional support, and helping people understand
-                    psychological well-being through relatable content and
-                    practical guidance.
-                  </p>
-                  <p>
-                    As I continued growing professionally—from psychology
-                    training to ABA therapy, art-based emotional support,
-                    counselling experience, and parent coaching—Trutalktherapy
-                    evolved with me. I realized that families needed a space
-                    where behavioural science, emotional education, and
-                    practical tools come together in a simple, empowering way.
-                  </p>
-                  <p>
-                    In Canada, while working closely with autistic children and
-                    their caregivers, I saw parents overwhelmed with behaviour
-                    challenges, communication barriers, routines breaking down,
-                    and a lack of guidance outside therapy hours. Many felt
-                    alone, pressured, or unsure how to support their child at
-                    home.
-                  </p>
-                  <p>That is when TruTalk Therapy found its new purpose.</p>
-                  <p>
-                    What started as a mental health awareness platform has now
-                    grown into a full{" "}
+                    . Initially focused on raising awareness and providing
+                    emotional support, the platform has evolved alongside
+                    Prerna’s own professional growth. It has transformed from a
+                    general mental health space into a{" "}
                     <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      caregiver-focused learning hub
-                    </span>
-                    —a place where parents can{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      understand behaviour, learn evidence-informed ABA
-                      strategies, explore art-based emotional regulation
-                    </span>
-                    , and access structured programs that make daily life{" "}
-                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
-                      calmer and more predictable
+                      specialized, caregiver-focused learning hub
                     </span>
                     .
                   </p>
-                  <p className="font-medium text-sage-700 italic">
-                    TruTalk Therapy stands for truth, education, and support—a
-                    safe learning space that empowers caregivers through
-                    compassion, clarity, and practical tools they can apply
-                    every day.
+                  <p>
+                    We recognized that parents often feel overwhelmed by
+                    behavioral challenges and a lack of guidance outside
+                    clinical settings. TruTalk Therapy bridges this gap by
+                    providing{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      evidence-informed ABA strategies
+                    </span>
+                    ,{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      emotional regulation techniques
+                    </span>
+                    , and structured programs. Our goal is to demystify
+                    behavioral science and offer{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      practical, actionable support
+                    </span>
+                    —making daily family life{" "}
+                    <span className="bg-sage-100/80 px-1 py-0.5 rounded box-decoration-clone text-stone-800">
+                      calmer, more predictable, and deeply supportive
+                    </span>{" "}
+                    for both children and their caregivers.
                   </p>
                 </div>
               </div>
