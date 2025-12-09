@@ -13,7 +13,7 @@ export function AboutSection() {
             {/* Placeholder for Therapist Image */}
             <div className="absolute inset-0 flex items-center justify-center bg-stone-100 text-stone-400">
               <img
-                src="/profile.jpeg"
+                src="/profile-colored.jpg"
                 alt="Prerna - Lead ABA Therapist"
                 className="w-full h-full object-cover"
               />
