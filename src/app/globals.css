@@ -1,30 +1,4 @@
 @import "tailwindcss";
-/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap'); */
-
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
 
 :root {
   --font-serif: "Cormorant Garamond", serif;
@@ -34,20 +8,80 @@ body {
 @theme {
   --font-sans: 'Lato', 'sans-serif';
   --font-serif: "Cormorant Garamond", 'serif';
-  --color-sage-50: #f4f7f4;
-  --color-sage-100: #e3ebe3;
-  --color-sage-200: #c5d8c5;
-  --color-sage-300: #9dbf9d;
-  --color-sage-400: #76a176;
-  --color-sage-500: #568556;
-  --color-sage-600: #436943;
-  --color-sage-800: #365136;
-  --color-sage-900: #2d422d;
-  --color-stone-50: #fafaf9;
-  --color-stone-100: #f5f5f4;
-  --color-stone-200: #e7e5e4;
-  --color-stone-800: #292524;
-  --color-stone-900: #1c1917;
+
+  /* New palette: golden yellow, chocolate brown, warm neutrals */
+  --color-gold-50: #fffdf5;
+  --color-gold-100: #fef9e7;
+  --color-gold-200: #fcefc2;
+  --color-gold-300: #f9df8c;
+  --color-gold-400: #f2c94c;
+  --color-gold-500: #e5a817;
+  --color-gold-600: #c98b0e;
+  --color-gold-700: #a06c0a;
+  --color-gold-800: #7d5308;
+
+  --color-chocolate-50: #faf6f2;
+  --color-chocolate-100: #f0e6da;
+  --color-chocolate-200: #dfc9af;
+  --color-chocolate-300: #c9a67a;
+  --color-chocolate-400: #a87d4f;
+  --color-chocolate-500: #7a4f2b;
+  --color-chocolate-600: #5e3a1e;
+  --color-chocolate-700: #472b15;
+  --color-chocolate-800: #331e0e;
+  --color-chocolate-900: #221408;
+
+  --color-cream-50: #fffefb;
+  --color-cream-100: #fefcf5;
+  --color-cream-200: #fdf8eb;
+
+  --color-warm-50: #fafaf8;
+  --color-warm-100: #f5f4f0;
+  --color-warm-200: #e8e6e0;
+  --color-warm-300: #d4d0c7;
+  --color-warm-400: #b0a999;
+  --color-warm-500: #8a8272;
+  --color-warm-600: #6b6456;
+  --color-warm-700: #4d473c;
+  --color-warm-800: #302c24;
+  --color-warm-900: #1a1814;
+
   --animate-fade-in: fadeIn 1.5s ease-out forwards;
-  --animate-fade-in-up: fadeInUp 1s ease-out forwards
+  --animate-fade-in-up: fadeInUp 1s ease-out forwards;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes gentle-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100dvh;
+}
+
+::selection {
+  background: #fcefc2;
+  color: #331e0e;
 }
