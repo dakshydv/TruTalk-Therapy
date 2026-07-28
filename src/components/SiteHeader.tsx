@@ -37,8 +37,8 @@ export function SiteHeader() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 py-4 md:py-5 flex items-center justify-between gap-6">
         <a href="/" className="shrink-0 group relative z-50">
           <span className="text-xl md:text-[1.65rem] font-serif font-bold tracking-tight leading-none">
-            <span className="text-gold-600 group-hover:text-gold-500 transition-colors">
-              Trutalk
+            <span className="text-gold-500 group-hover:text-gold-600 transition-colors">
+              TruTalk
             </span>{" "}
             <span className="text-chocolate-800">Therapy</span>
           </span>

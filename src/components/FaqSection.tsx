@@ -57,13 +57,13 @@ export function FaqSection() {
               return (
                 <div
                   key={item.question}
-                  className="rounded-2xl border border-gold-300/80 bg-gold-50/30 overflow-hidden"
+                  className="rounded-2xl border border-gold-300 bg-gold-100 overflow-hidden"
                 >
                   <button
                     type="button"
                     onClick={() => setExpanded(isExpanded ? null : index)}
                     aria-expanded={isExpanded}
-                    className="w-full flex items-start justify-between gap-4 px-5 py-4 md:px-6 md:py-5 text-left hover:bg-gold-50/60 transition-colors"
+                    className="w-full flex items-start justify-between gap-4 px-5 py-4 md:px-6 md:py-5 text-left hover:bg-gold-200/50 transition-colors"
                   >
                     <span className="font-serif text-base md:text-lg font-semibold text-chocolate-800 leading-snug">
                       {item.question}
@@ -85,10 +85,17 @@ export function FaqSection() {
             })}
           </div>
 
-          <div className="mt-12 md:mt-16 rounded-3xl border border-gold-200/60 bg-gold-50/40 px-6 py-8 md:px-10 md:py-10 text-center">
-            <p className="text-chocolate-600 font-light leading-relaxed max-w-lg mx-auto">
-              For more information and OAP funding related queries, book a free
-              consultation.
+          <div className="mt-12 md:mt-16 rounded-3xl border border-gold-300 bg-gold-100 px-6 py-8 md:px-10 md:py-10 text-center">
+            <p className="text-chocolate-700 font-light leading-relaxed max-w-lg mx-auto">
+              For more information and{" "}
+              <span className="font-semibold text-chocolate-800">
+                OAP funding
+              </span>{" "}
+              related queries, book a{" "}
+              <span className="font-semibold text-chocolate-800">
+                free consultation
+              </span>
+              .
             </p>
             <Link
               href="#contact"

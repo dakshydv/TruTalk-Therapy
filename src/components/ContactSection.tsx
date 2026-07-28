@@ -19,28 +19,30 @@ export function ContactSection() {
               />
               <ul className="mt-6 space-y-4 text-chocolate-700">
                 <li className="flex items-center gap-3">
-                  <Mail size={20} className="text-gold-600 shrink-0" />
+                  <Mail size={20} className="text-gold-500 shrink-0" />
                   <a
-                    href="mailto:hello@trutalktherapy.com"
-                    className="hover:text-gold-700 transition-colors"
+                    href="mailto:support@trutalktherapy.com"
+                    className="font-semibold text-chocolate-800 hover:text-gold-600 transition-colors"
                   >
-                    hello@trutalktherapy.com
+                    support@trutalktherapy.com
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Phone size={20} className="text-gold-600 shrink-0" />
-                  <span className="text-chocolate-500">
+                  <Phone size={20} className="text-gold-500 shrink-0" />
+                  <span className="text-chocolate-700">
                     Phone — contact us by email to schedule a call
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Clock size={20} className="text-gold-600 shrink-0 mt-0.5" />
+                  <Clock size={20} className="text-gold-500 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="font-medium text-chocolate-800 block mb-0.5">
+                    <strong className="font-semibold text-chocolate-800 block mb-0.5">
                       Hours of operation
                     </strong>
-                    Monday – Friday, 9:00 AM – 6:00 PM
-                    <span className="block text-sm text-chocolate-500 mt-1">
+                    <span className="font-medium text-chocolate-800">
+                      8:00 AM – 8:00 PM
+                    </span>
+                    <span className="block text-sm text-chocolate-600 mt-1">
                       Weekend sessions by appointment
                     </span>
                   </span>
@@ -49,10 +51,16 @@ export function ContactSection() {
             </div>
 
             <div className="flex flex-col justify-center">
-              <p className="text-chocolate-600 font-light leading-relaxed mb-6">
-                Not sure where to start? Book a free consultation — including
-                questions about OAP funding — and we&apos;ll help you find the
-                right fit for your child.
+              <p className="text-chocolate-700 font-light leading-relaxed mb-6">
+                Not sure where to start? Book a{" "}
+                <span className="font-semibold text-chocolate-800">
+                  free consultation
+                </span>{" "}
+                — including questions about{" "}
+                <span className="font-semibold text-chocolate-800">
+                  OAP funding
+                </span>{" "}
+                — and we&apos;ll help you find the right fit for your child.
               </p>
               <Link
                 href="#contact"

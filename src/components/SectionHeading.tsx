@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-const accentClass = "text-gold-600 italic font-normal";
+const accentClass = "text-gold-500 italic font-normal";
 
 type SectionHeadingProps = {
   label: string;
@@ -33,15 +33,15 @@ export function SectionHeading({
         }`}
       >
         <span
-          className="h-px w-10 shrink-0 bg-gold-400/90"
+          className="h-px w-10 shrink-0 bg-gold-400"
           aria-hidden="true"
         />
-        <p className="font-serif text-base italic text-gold-700 md:text-[1.0625rem]">
+        <p className="font-serif text-lg italic text-gold-600 md:text-xl">
           {label}
         </p>
         {centered && (
           <span
-            className="h-px w-10 shrink-0 bg-gold-400/90"
+            className="h-px w-10 shrink-0 bg-gold-400"
             aria-hidden="true"
           />
         )}
@@ -50,8 +50,8 @@ export function SectionHeading({
       <Tag
         className={`font-serif font-semibold text-chocolate-800 tracking-[-0.02em] ${
           isPrimary
-            ? "max-w-3xl text-3xl leading-[1.08] sm:text-4xl md:text-[2.75rem]"
-            : "max-w-2xl text-2xl leading-[1.1] sm:text-[1.75rem] md:text-3xl"
+            ? "max-w-3xl text-[2.25rem] leading-[1.06] sm:text-[2.75rem] md:text-[3.25rem] lg:text-[3.5rem]"
+            : "max-w-3xl text-[2rem] leading-[1.08] sm:text-[2.5rem] md:text-[2.875rem]"
         } ${centered ? "mx-auto" : ""}`}
       >
         {title}
@@ -82,7 +82,7 @@ export function SubsectionTitle({
 }: SubsectionTitleProps) {
   return (
     <h3
-      className={`font-serif text-xl font-semibold leading-snug tracking-[-0.01em] text-chocolate-800 md:text-2xl ${className}`.trim()}
+      className={`font-serif text-2xl font-semibold leading-snug tracking-[-0.01em] text-chocolate-800 md:text-[1.75rem] lg:text-3xl ${className}`.trim()}
     >
       {children}
     </h3>

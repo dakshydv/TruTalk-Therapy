@@ -62,28 +62,48 @@ export function AboutSection() {
                   At TruTalk Therapy, we believe every child has unique strengths,
                   abilities, and potential waiting to be discovered. Our mission is
                   to provide compassionate, evidence-based behavioural support that
-                  helps children with autism and developmental needs build
-                  meaningful skills, increase independence, and participate more
-                  confidently in everyday life.
+                  helps children with{" "}
+                  <span className="font-medium text-chocolate-800">
+                    autism and developmental needs
+                  </span>{" "}
+                  build meaningful skills, increase independence, and participate
+                  more confidently in everyday life.
                 </p>
                 <p>
-                  We use the principles of Applied Behaviour Analysis (ABA) to
-                  create individualized programs based on each child&apos;s needs,
-                  interests, and goals. Our approach focuses on skill development
-                  through positive reinforcement, natural learning opportunities,
-                  play-based teaching, and collaboration with families.
+                  We use the principles of{" "}
+                  <span className="font-medium text-chocolate-800">
+                    Applied Behaviour Analysis (ABA)
+                  </span>{" "}
+                  to create individualized programs based on each child&apos;s
+                  needs, interests, and goals. Our approach focuses on skill
+                  development through{" "}
+                  <span className="font-medium text-chocolate-800">
+                    positive reinforcement
+                  </span>
+                  , natural learning opportunities,{" "}
+                  <span className="font-medium text-chocolate-800">
+                    play-based teaching
+                  </span>
+                  , and collaboration with families.
                 </p>
                 <p>
                   Our team is committed to creating a safe, welcoming, and
                   inclusive environment where children feel respected, understood,
                   and supported. We work closely with families, caregivers, and
                   professionals to ensure that the skills learned in therapy can
-                  be applied across home, school, and community settings.
+                  be applied across{" "}
+                  <span className="font-medium text-chocolate-800">
+                    home, school, and community
+                  </span>{" "}
+                  settings.
                 </p>
                 <p className="text-chocolate-800 font-normal">
                   At TruTalk Therapy, we focus on more than just behaviour change
-                  — we focus on helping children communicate, connect, learn, and
-                  thrive.
+                  — we focus on helping children{" "}
+                  <span className="text-gold-600 font-medium">
+                    communicate, connect, learn, and thrive
+                  </span>
+                  .
                 </p>
               </div>
 
@@ -122,7 +142,7 @@ export function AboutSection() {
                 <>
                   Every child learns differently. We believe therapy should be{" "}
                   <span className={accentClass}>personalized, respectful,</span>{" "}
-                  and meaningful.
+                  and <span className={accentClass}>meaningful.</span>
                 </>
               }
               description="Our goal is to celebrate each child's individuality while providing the support they need to reach their fullest potential."
@@ -144,17 +164,17 @@ export function AboutSection() {
               description="Our programs may include:"
             />
 
-            <div className="rounded-3xl border border-gold-300/80 bg-gold-50/30 px-6 py-8 sm:px-10 sm:py-10 md:px-12 md:py-12">
+            <div className="rounded-3xl border border-gold-300 bg-gold-100 px-6 py-8 sm:px-10 sm:py-10 md:px-12 md:py-12">
               <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-1">
                 {PROGRAMS.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-baseline gap-4 py-3.5 border-b border-gold-200/70"
+                    className="flex items-baseline gap-4 py-3.5 border-b border-gold-200"
                   >
-                    <span className="font-serif text-gold-600 text-lg tabular-nums shrink-0 w-7">
+                    <span className="font-serif text-gold-500 text-lg tabular-nums shrink-0 w-7">
                       {String(index + 1).padStart(2, "0")}
                     </span>
-                    <span className="text-chocolate-700 text-[0.9875rem] md:text-base leading-snug pt-0.5">
+                    <span className="text-chocolate-800 font-medium text-[0.9875rem] md:text-base leading-snug pt-0.5">
                       {item}
                     </span>
                   </li>
@@ -175,7 +195,7 @@ export function AboutSection() {
                   <span className={accentClass}>trust.</span>
                 </>
               }
-              description="Meet the BCBAs, RBTs, and clinical staff who will walk alongside your family. Replace these mock photos with real team headshots when ready."
+              description="Meet the BCBAs, RBTs, and clinical staff who will walk alongside your family."
             />
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
@@ -188,10 +208,10 @@ export function AboutSection() {
                       className="h-full w-full object-cover object-top"
                     />
                   </div>
-                  <p className="text-sm font-serif italic text-gold-700 mb-1.5">
+                  <p className="text-sm font-serif italic text-gold-600 mb-1.5">
                     Name &amp; credentials
                   </p>
-                  <h4 className="font-serif text-xl text-chocolate-800 leading-snug mb-2">
+                  <h4 className="font-serif text-xl md:text-2xl text-chocolate-800 leading-snug mb-2">
                     {member.role}
                   </h4>
                   <p className="text-sm text-chocolate-500 font-light leading-relaxed">
