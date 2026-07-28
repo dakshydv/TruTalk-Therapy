@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { ChevronDown, ArrowRight } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { SectionHeading, accentClass } from "@/components/SectionHeading";
 
 const FAQ_ITEMS = [
@@ -83,27 +82,6 @@ export function FaqSection() {
                 </div>
               );
             })}
-          </div>
-
-          <div className="mt-12 md:mt-16 rounded-3xl border border-gold-300 bg-gold-100 px-6 py-8 md:px-10 md:py-10 text-center">
-            <p className="text-chocolate-700 font-light leading-relaxed max-w-lg mx-auto">
-              For more information and{" "}
-              <span className="font-semibold text-chocolate-800">
-                OAP funding
-              </span>{" "}
-              related queries, book a{" "}
-              <span className="font-semibold text-chocolate-800">
-                free consultation
-              </span>
-              .
-            </p>
-            <Link
-              href="#contact"
-              className="mt-6 inline-flex items-center justify-center gap-2 px-8 py-4 bg-chocolate-800 text-gold-50 rounded-full font-semibold text-base hover:bg-chocolate-700 transition-colors duration-200"
-            >
-              Book a free consultation
-              <ArrowRight size={18} />
-            </Link>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ export function SiteHeader() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="#book"
             className="ml-2 lg:ml-3 px-5 py-2.5 text-[0.8125rem] font-bold text-cream-50 bg-chocolate-800 rounded-full hover:bg-chocolate-700 transition-colors duration-200 shadow-sm"
           >
             Book a Session
@@ -113,7 +113,7 @@ export function SiteHeader() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#book"
               onClick={close}
               className="mt-4 mx-1 px-5 py-3.5 text-center text-base font-bold text-cream-50 bg-chocolate-800 rounded-full hover:bg-chocolate-700 transition-colors"
             >

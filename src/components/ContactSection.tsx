@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
-import { Mail, Phone, Clock, ArrowRight } from "lucide-react";
+import { BookingForm } from "@/components/BookingForm";
+import { Mail, Phone, Clock } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -9,15 +9,23 @@ export function ContactSection() {
         <div className="max-w-6xl mx-auto">
           <div
             id="contact"
-            className="grid md:grid-cols-2 gap-10 md:gap-12 pt-4 scroll-mt-24"
+            className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] gap-10 lg:gap-14 pt-4 scroll-mt-24"
           >
             <div>
               <SectionHeading
                 level="secondary"
                 label="Contact"
-                title="Get in touch"
+                title="Book a free consultation"
               />
-              <ul className="mt-6 space-y-4 text-chocolate-700">
+              <p className="mt-5 text-chocolate-700 font-light leading-relaxed max-w-md">
+                Not sure where to start? Request a consultation — including
+                questions about{" "}
+                <span className="font-semibold text-chocolate-800">
+                  OAP funding
+                </span>{" "}
+                — and we&apos;ll help you find the right fit for your child.
+              </p>
+              <ul className="mt-8 space-y-4 text-chocolate-700">
                 <li className="flex items-center gap-3">
                   <Mail size={20} className="text-gold-500 shrink-0" />
                   <a
@@ -50,25 +58,8 @@ export function ContactSection() {
               </ul>
             </div>
 
-            <div className="flex flex-col justify-center">
-              <p className="text-chocolate-700 font-light leading-relaxed mb-6">
-                Not sure where to start? Book a{" "}
-                <span className="font-semibold text-chocolate-800">
-                  free consultation
-                </span>{" "}
-                — including questions about{" "}
-                <span className="font-semibold text-chocolate-800">
-                  OAP funding
-                </span>{" "}
-                — and we&apos;ll help you find the right fit for your child.
-              </p>
-              <Link
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 self-start px-8 py-4 bg-chocolate-800 text-gold-50 rounded-full font-semibold text-base hover:bg-chocolate-700 transition-colors duration-200"
-              >
-                Request a Consultation
-                <ArrowRight size={18} />
-              </Link>
+            <div id="book" className="scroll-mt-28">
+              <BookingForm />
             </div>
           </div>
         </div>

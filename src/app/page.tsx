@@ -49,13 +49,13 @@ function HeroIntro() {
         A warm, supportive environment designed to help every child find{" "}
         <span className="font-medium text-chocolate-800">their voice</span>,{" "}
         <span className="font-medium text-chocolate-800">build confidence</span>, and{" "}
-        <span className="font-medium text-chocolate-800">thrive</span> at their own
+        <span className="font-medium text-chocolate-800">grow</span> at their own
         pace.
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-2 md:pt-4 w-full sm:w-auto">
         <Link
-          href="#contact"
+          href="#book"
           className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-chocolate-800 text-gold-50 rounded-full font-semibold text-base sm:text-lg tracking-wide shadow-md hover:bg-chocolate-700 hover:-translate-y-0.5 transition-all duration-300"
         >
           Start Your Journey

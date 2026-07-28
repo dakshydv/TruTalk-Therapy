@@ -50,8 +50,10 @@ export function AboutSection() {
               label="About Us"
               title={
                 <>
-                  Helping children communicate, connect, learn, and{" "}
-                  <span className={accentClass}>thrive.</span>
+                  Helping children{" "}
+                  <span className={accentClass}>communicate, connect, learn,</span>
+                   and{" "}
+                  <span className={accentClass}>grow.</span>
                 </>
               }
             />
@@ -101,7 +103,7 @@ export function AboutSection() {
                   At TruTalk Therapy, we focus on more than just behaviour change
                   — we focus on helping children{" "}
                   <span className="text-gold-600 font-medium">
-                    communicate, connect, learn, and thrive
+                    communicate, connect, learn, and grow
                   </span>
                   .
                 </p>
