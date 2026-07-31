@@ -180,7 +180,7 @@ export function ServicesSection() {
                 <span className={accentClass}>up to 18.</span>
               </>
             }
-            description="BCBA-led programs for autism and developmental needs — personalized, family-centred, and designed to help your child build skills that last across home, school, and community."
+            description="BCBA-led ABA programs for autism and developmental needs across the Greater Toronto Area — personalized, family-centred, and delivered center-based, in-home, or via telehealth so skills last at home, school, and in the community."
           />
 
           <div className="flex flex-wrap items-center gap-x-8 gap-y-4 py-2 border-y border-gold-300">

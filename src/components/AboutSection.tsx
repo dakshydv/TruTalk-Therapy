@@ -62,14 +62,17 @@ export function AboutSection() {
               <div className="lg:col-span-7 space-y-5 text-[1.0625rem] md:text-lg text-chocolate-600 font-light leading-[1.7] text-pretty max-w-prose">
                 <p>
                   At TruTalk Therapy, we believe every child has unique strengths,
-                  abilities, and potential waiting to be discovered. Our mission is
-                  to provide compassionate, evidence-based behavioural support that
-                  helps children with{" "}
+                  abilities, and potential waiting to be discovered. Based in the{" "}
+                  <span className="font-medium text-chocolate-800">
+                    Greater Toronto Area
+                  </span>
+                  , our mission is to provide compassionate, evidence-based
+                  behavioural support that helps children with{" "}
                   <span className="font-medium text-chocolate-800">
                     autism and developmental needs
                   </span>{" "}
-                  build meaningful skills, increase independence, and participate
-                  more confidently in everyday life.
+                  across Ontario build meaningful skills, increase independence,
+                  and participate more confidently in everyday life.
                 </p>
                 <p>
                   We use the principles of{" "}
@@ -86,7 +89,8 @@ export function AboutSection() {
                   <span className="font-medium text-chocolate-800">
                     play-based teaching
                   </span>
-                  , and collaboration with families.
+                  , and collaboration with families — delivered through
+                  center-based, in-home, and telehealth options.
                 </p>
                 <p>
                   Our team is committed to creating a safe, welcoming, and

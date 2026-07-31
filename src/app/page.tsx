@@ -18,6 +18,7 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FaqSection } from "@/components/FaqSection";
 import { ContactSection } from "@/components/ContactSection";
+import { JsonLd } from "@/components/JsonLd";
 import Link from "next/link";
 import { ArrowRight, Star, ChevronDown } from "lucide-react";
 
@@ -46,9 +47,16 @@ function HeroIntro() {
       </h1>
 
       <p className="text-lg sm:text-xl text-chocolate-600 leading-relaxed max-w-xl font-sans font-light">
-        A warm, supportive environment designed to help every child find{" "}
+        Compassionate{" "}
+        <span className="font-medium text-chocolate-800">ABA therapy</span> and
+        autism support for families across the{" "}
+        <span className="font-medium text-chocolate-800">
+          Greater Toronto Area
+        </span>{" "}
+        — helping every child find{" "}
         <span className="font-medium text-chocolate-800">their voice</span>,{" "}
-        <span className="font-medium text-chocolate-800">build confidence</span>, and{" "}
+        <span className="font-medium text-chocolate-800">build confidence</span>,
+        and{" "}
         <span className="font-medium text-chocolate-800">grow</span> at their own
         pace.
       </p>
@@ -88,7 +96,7 @@ function HeroBanner({ className = "" }: { className?: string }) {
     >
       <img
         src="/banner.png"
-        alt="Trutalk Therapy — children playing joyfully"
+        alt="TruTalk Therapy — illustrated children playing joyfully, reflecting warm ABA therapy and autism support for GTA families"
         className="w-full h-auto object-contain"
         draggable={false}
       />
@@ -99,15 +107,13 @@ function HeroBanner({ className = "" }: { className?: string }) {
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white overflow-x-hidden">
+      <JsonLd />
       <SiteHeader />
 
       <main className="grow flex flex-col">
-        {/* Mobile: banner + intro stacked */}
-        <section className="lg:hidden px-5 sm:px-8 pt-28 pb-16 bg-white">
+        {/* Mobile: banner */}
+        <section className="lg:hidden px-5 sm:px-8 pt-28 bg-white">
           <HeroBanner />
-          <div className="mt-8 sm:mt-10">
-            <HeroIntro />
-          </div>
         </section>
 
         {/* Desktop: banner-only first viewport */}
@@ -123,10 +129,10 @@ export default function Home() {
           </a>
         </section>
 
-        {/* Desktop: intro on scroll */}
+        {/* Shared intro — single H1 in the DOM */}
         <section
           id="intro"
-          className="hidden lg:block scroll-mt-24 px-8 xl:px-12 py-20 xl:py-28 bg-white"
+          className="scroll-mt-24 px-5 sm:px-8 lg:px-8 xl:px-12 pt-8 sm:pt-10 pb-16 lg:py-20 xl:py-28 bg-white"
         >
           <HeroIntro />
         </section>

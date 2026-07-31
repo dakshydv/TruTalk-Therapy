@@ -13,13 +13,13 @@ export function ContactSection() {
           >
             <div>
               <SectionHeading
-                level="secondary"
                 label="Contact"
                 title="Book a free consultation"
               />
               <p className="mt-5 text-chocolate-700 font-light leading-relaxed max-w-md">
-                Not sure where to start? Request a consultation — including
-                questions about{" "}
+                Based in the GTA and serving families across Ontario. Not sure
+                where to start? Request a consultation — including questions
+                about{" "}
                 <span className="font-semibold text-chocolate-800">
                   OAP funding
                 </span>{" "}
@@ -48,7 +48,7 @@ export function ContactSection() {
                       Hours of operation
                     </strong>
                     <span className="font-medium text-chocolate-800">
-                      8:00 AM – 8:00 PM
+                      8:00 AM – 8:00 PM (Eastern)
                     </span>
                     <span className="block text-sm text-chocolate-600 mt-1">
                       Weekend sessions by appointment

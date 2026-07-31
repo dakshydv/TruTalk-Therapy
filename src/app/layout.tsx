@@ -2,6 +2,12 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Geist, Lato, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,8 +44,40 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "TruTalk Therapy",
-  description: "A calming and trusted space for parents to connect with a lead child psychologist, book personalized autism consultations, and learn through guided modules designed to support their child'tps growth and well-being.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_CA",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [
+      {
+        url: "/banner.png",
+        alt: "TruTalk Therapy — ABA therapy and autism support for families in the GTA",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: ["/banner.png"],
+  },
   icons: {
     icon: "/profile-circular.png",
     shortcut: "/profile-circular.png",
