@@ -20,23 +20,23 @@ const FACILITY_IMAGES = {
 } as const;
 
 /** Replace with real staff when photos + bios are ready */
-const TEAM_PLACEHOLDERS = [
-  {
-    role: "Board Certified Behaviour Analyst (BCBA)",
-    image: "/about/staff-1.jpg",
-    alt: "BCBA clinical team member",
-  },
-  {
-    role: "Registered Behaviour Technician (RBT)",
-    image: "/about/staff-2.jpg",
-    alt: "RBT clinical team member",
-  },
-  {
-    role: "Clinical Staff",
-    image: "/about/staff-3.jpg",
-    alt: "Clinical staff team member",
-  },
-] as const;
+// const TEAM_PLACEHOLDERS = [
+//   {
+//     role: "Board Certified Behaviour Analyst (BCBA)",
+//     image: "/about/staff-1.jpg",
+//     alt: "BCBA clinical team member",
+//   },
+//   {
+//     role: "Registered Behaviour Technician (RBT)",
+//     image: "/about/staff-2.jpg",
+//     alt: "RBT clinical team member",
+//   },
+//   {
+//     role: "Clinical Staff",
+//     image: "/about/staff-3.jpg",
+//     alt: "Clinical staff team member",
+//   },
+// ] as const;
 
 export function AboutSection() {
   return (
@@ -185,7 +185,7 @@ export function AboutSection() {
             </div>
           </div>
 
-          {/* ── Clinical team ── */}
+          {/* ── Clinical team (hidden until team is ready) ──
           <div>
             <SectionHeading
               className="mb-10 md:mb-12"
@@ -224,6 +224,7 @@ export function AboutSection() {
               ))}
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>
